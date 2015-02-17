@@ -11,14 +11,11 @@ To Run:
 4) Exam Paper Year input:
 
 Valid between years 1998 - 2012
-2013 onwards, available here -> ...
+2013 onwards, available here -> https://www.tcd.ie/academicregistry/exams/past-papers/annual/
 
 5) Student Year:
 
-JF = 1 
-SF = 2
-JS = 3
-SS = 4
+JF = 1  SF = 2  JS = 3  SS = 4
 
 Files are stored in the same folder as the python script.
 
