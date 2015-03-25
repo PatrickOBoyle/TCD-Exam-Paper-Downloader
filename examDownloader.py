@@ -41,11 +41,13 @@ html = response.read()
 
 def download_file(download_url, file_name):
     #Save the file in a folder based on year
-    directory = user_exam_year
-    if not os.path.exists(directory):
-        os.makedirs(directory)
+    script_dir = os.path.dirname(__file__) #absolute dir the script is in
+    rel_path = user_exam_year
+    abs_file_path = os.path.join(script_dir, rel_path)
+    if not os.path.exists(abs_file_path):
+        os.makedirs(abs_file_path)
     response = urllib2.urlopen(download_url)
-    file = open(directory+"/"+file_name, 'w')
+    file = open(abs_file_path+"/"+file_name, 'w')
     file.write(response.read())
     file.close
     print("Download completed.")
